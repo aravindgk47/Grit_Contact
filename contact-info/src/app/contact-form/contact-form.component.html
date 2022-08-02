@@ -1,0 +1,34 @@
+<p>contact form !</p>
+
+<form>
+    <div class="form-group row" style="padding-bottom: 10px;">
+      <label for="exampleInputName" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="username" name="username" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Name">
+    </div>
+
+    </div>
+    <div class="form-group row" style="padding-bottom: 10px;">
+      <label for="exampleInputDob" class="col-sm-2 col-form-label">DOB</label>
+      <div class="col-sm-10">
+        <input type="date" class="form-control" [(ngModel)]="dob" name="dob"  id="exampleInputDob" placeholder="date of birth">
+    </div>
+    </div>
+    <div class="form-group row" style="padding-bottom: 10px;">
+        <label for="exampleInputPhoneNo" class="col-sm-2 col-form-label">Phone No</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" [(ngModel)]="phoneNo" name="phoneNo"  id="exampleInputPhoneNo" placeholder="Phone number">
+        </div>
+      </div>
+      <div class="form-group row" style="text-align: end;">
+        <label for="exampleInputPhoneNo" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+        </div>
+      </div>
+    
+   
+  </form>
+<app-info-list [datas]="empList"></app-info-list>
+
+
